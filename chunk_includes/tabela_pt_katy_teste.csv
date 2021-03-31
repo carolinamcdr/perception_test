@@ -66,9 +66,3 @@ watch_k_1.wav,what,watch,watch,sheep_sheep.wav,same
 what_k_1.wav,what,watch,what,sheep_ship.wav,different
 wont_k_1.wav,want,won't,won't,ship_ship.wav,same
 workout_k_1.wav,walkout,workout,workout,soap_soup.wav,different
-,,,,walkout_walkout.wav,same
-,,,,walkout_workout.wav,different
-,,,,want_want.wav,same
-,,,,want_wont.wav,different
-,,,,watch_what.wav,different
-,,,,what_what.wav,same
