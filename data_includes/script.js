@@ -26,7 +26,7 @@ Header(
 
 newTrial("Consentimento",
 
-      newText("<p>You have been invited to take part in a research study about how people perceive their own production of some vowel contrasts in English. The study is being conducted by NEALP (Núcleo de Estudos em Aquisição da Linguagem e Psicolinguística<br> at UFJF.</p><p>You are being asked to complete this experiment because <b>you are an adult (18 years or older), you are either a native speaker of American English or Brazilian Portuguese and you are fluent in English.</b></p><p>Any information that you provide will be anonymized and kept confidential. You may withdraw from this study at any time without penalty.<br> However, make sure you have a reliable internet connection and are able to complete the study in one sitting.</p><p>If you have questions about this research, or if you would like to receive a report of this research when it is completed, please contact the researcher<br> Carolina Macedo at carolinamacedorocha@gmail.com.</p><p>This study takes approximately <b>15 minutes.</b></p><p>By clicking 'I agree', you agree that you are at least 18 years old, that you are fluent in English and that you understand these instructions and <br>conditions of participation.</p>")
+      newText("<p>You have been invited to take part in a research study about how people perceive their own production of some vowel contrasts in English. The study is being conducted by NEALP (Núcleo de Estudos em Aquisição da Linguagem e Psicolinguística<br> at UFJF.</p><p>You are being asked to complete this experiment because <b>you are an adult (18 years or older), you are either a native speaker of American English or Brazilian Portuguese and you are fluent in English.</b></p><p>Any information that you provide will be anonymized and kept confidential. You may withdraw from this study at any time without penalty.<br> However, make sure you have a reliable internet connection and are able to complete the study in one sitting.</p><p>If you have questions about this research, or if you would like to receive a report of this research when it is completed, please contact the researcher<br> Carolina Macedo at carolinamacedorocha@gmail.com.</p><p>This study takes approximately <b>10 minutes.</b></p><p>By clicking 'I agree', you agree that you are at least 18 years old, that you are fluent in English and that you understand these instructions and <br>conditions of participation.</p>")
         .print()
         ,
     newButton("I Agree")
@@ -40,7 +40,7 @@ newTrial("Consentimento",
 newTrial("Participante",
          newText("<p>Welcome</p>")
          ,
-         newText("<p>Thank you for accepting our invitation to participate in our test.<br>In this test you'll be asked to answer two different tasks:<br><b>1. Identification:</b> you'll hear 2 words and answer if they're <i>the same or different</i>.<br>2. <b>Discrimination:</b> you'll hear 1 word and choose between 2 options <i>which word you heard</i>.<br>This test will take about 20 minutes.<br>We recommend that you take this test without external interruptions, wearing headphones/earphones.<br>Thank you again for your collaboration!</p>")
+         newText("<p>Thank you for accepting our invitation to participate in our test.<br>In this test you'll be asked to answer two different tasks:<br><b>1. Identification:</b> you'll hear 2 words and answer if they're <i>the same or different</i>.<br><b>2. Discrimination:</b> you'll hear 1 word and choose between 2 options <i>which word you heard</i>.<br>Please note that you'll listen to your own voice and to other participant's along the test.<br>This test will take about 10 minutes.<br>We recommend that you take this test without external interruptions, wearing headphones/earphones.<br>Thank you again for your collaboration!</p>")
          ,
          newText("<p>Please, fill in your FULL NAME in the box below:</p>")
          ,
@@ -131,6 +131,7 @@ Template("tabela.csv",
 newTrial( "Final" ,
     newText("<p>This is the end of the test. Thank you for your collaboration!</p>")
         .css("font-size","1.2em")
+        .center()
         .print()
         .wait()
   
