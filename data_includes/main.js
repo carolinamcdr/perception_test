@@ -21,19 +21,14 @@ Header(
             .css("font-size","1.2em")
             .center()
             .print()
-            .wait()
 )
 
 newTrial("Consentimento",
 
-      newText("<p>You have been invited to take part in a research study about how people perceive their own production of some vowel contrasts in English. The study is being conducted by NEALP (Núcleo de Estudos em Aquisição da Linguagem e Psicolinguística<br> at UFJF.</p><p>You are being asked to complete this experiment because <b>you are an adult (18 years or older), you are either a native speaker of American English or Brazilian Portuguese and you are fluent in English.</b></p><p>Any information that you provide will be anonymized and kept confidential. You may withdraw from this study at any time without penalty.<br> However, make sure you have a reliable internet connection and are able to complete the study in one sitting.</p><p>If you have questions about this research, or if you would like to receive a report of this research when it is completed, please contact the researcher<br> Carolina Macedo at carolinamacedorocha@gmail.com.</p><p>This study takes approximately <b>10 minutes.</b></p><p>By clicking 'I agree', you agree that you are at least 18 years old, that you are fluent in English and that you understand these instructions and <br>conditions of participation.</p>")
-        .print()
+      newText("<p>You have been invited to take part in a research study about how people perceive some vowel contrasts in English. The study is being conducted by NEALP (Núcleo de Estudos em Aquisição da Linguagem e Psicolinguística<br> at UFJF.</p><p>You are being asked to complete this experiment because <b>you are an adult (18 years or older), you are either a native speaker of American English or Brazilian Portuguese and you are fluent in English.</b></p><p>Any information that you provide will be anonymized and kept confidential. You may withdraw from this study at any time without penalty.<br> However, make sure you have a reliable internet connection and are able to complete the study in one sitting.</p><p>If you have questions about this research, or if you would like to receive a report of this research when it is completed, please contact the researcher<br> Carolina Macedo at carolinamacedorocha@gmail.com.</p><p>This study takes approximately <b>10 minutes.</b></p><p>By clicking 'I agree', you agree that you are at least 18 years old, that you are fluent in English and that you understand these instructions and <br>conditions of participation.</p>")
         ,
     newButton("I Agree")
         .css("font-size","1.2em")
-        .print()
-        .center()
-        .log()
         .wait()
 )
 //Cria uma nova tela - Tela de coleta de dados do participante
@@ -65,6 +60,7 @@ newTrial("Participante",
          ,
 //Cria um botão nomeado "Start"
          newButton("Start")
+         .wait()
          ,
 //Cria uma nova variável chamada "NAME" que recebe o conteúdo da caixa de texto "Name"
     newVar("NAME")
@@ -83,6 +79,7 @@ newTrial("Instrucoes",
     //Cria um novo botão nomeado "Start" e envia para o arquivo "results" a informação de quando ele é pressionado
     newButton("Start")
         .log()
+        .wait()
 )
 //Indica o uso da tabela "tabela.csv"
 Template("tabela.csv",
@@ -110,8 +107,8 @@ Template("tabela.csv",
         ,
         //Cria um canvas (uma caixa) e coloca os textos "A" e "B" um ao lado do outro
         newCanvas( 1400 , 700 )
-            .add( 200 , 100 , getText("A") )
-            .add( 540 , 100 , getText("B") )
+            .add( 140 , 100 , getText("A") )
+            .add( 440 , 100 , getText("B") )
             .print()
             
             //Agora, dentro do canvas, é que os textos "A" e "B" serão impressos na tela
@@ -126,6 +123,7 @@ Template("tabela.csv",
     )
     .log("RespostaCerta",variable.RC)
     .log("Speaker",variable.Speaker)
+    . log("Condition", variable.Condition)
 )
 //Nova Tela - Tela final    
 newTrial( "Final" ,
